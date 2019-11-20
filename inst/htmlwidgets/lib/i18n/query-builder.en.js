@@ -29,8 +29,8 @@ QueryBuilder.regional['en'] = {
     "OR": "OR"
   },
   "operators": {
-    "equal": "equal",
-    "not_equal": "not equal",
+    "equal": "is equal to",
+    "not_equal": "is not equal to",
     "in": "in",
     "not_in": "not in",
     "less": "less",
@@ -49,16 +49,14 @@ QueryBuilder.regional['en'] = {
     "is_not_empty": "is not empty",
     "is_null": "is null",
     "is_not_null": "is not null",
-    "is_na": "is na",
-    "is_not_na": "is not na",
-    "equal_": "equal",
-    "not_equal_": "not equal",
+    "is_na": "field is empty",
+    "is_not_na": "field is not empty",
+    "equal_": "is equal to",
+    "not_equal_": "is not equal to",
     "less_": "less",
     "less_or_equal_": "less or equal",
     "greater_": "greater",
-    "greater_or_equal_": "greater or equal",
-    "up" : "up",
-    "down" : "down"
+    "greater_or_equal_": "greater or equal"
   },
   "errors": {
     "no_filter": "No filter selected",

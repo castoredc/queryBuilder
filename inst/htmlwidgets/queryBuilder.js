@@ -127,11 +127,9 @@ HTMLWidgets.widget({
         // Add global operators list
         var myOperators = ['equal', 'not_equal', 'less', 'less_or_equal', 'greater', 'greater_or_equal', 'between', 'not_between', 'begins_with', 'not_begins_with', 'ends_with', 'not_ends_with', 'contains', 'not_contains', 'in', 'not_in'];
         var operator = [];
-        myOperators.forEach(function(x) { operator.push({ type : x, optgroup : 'Scalar'}) });
-        operator.push({ type: "is_not_na", optgroup: "NA values", "nb_inputs": "0", "apply_to": ["number", "string", "datetime", "boolean"] });
-        operator.push({ type: "is_na", optgroup: "NA values", "nb_inputs": "0", "apply_to": ["number", "string", "datetime", "boolean"] });
-        operator.push({ type: "up", optgroup: "Trend Analysis", "nb_inputs": "1", "apply_to": ["string"] });
-        operator.push({ type: "down", optgroup: "Trend Analysis", "nb_inputs": "1", "apply_to": ["string"] });
+        myOperators.forEach(function(x) { operator.push({ type : x, optgroup : ''}) });
+        operator.push({ type: "is_not_na", optgroup: "", "nb_inputs": "0", "apply_to": ["number", "string", "datetime", "boolean"] });
+        operator.push({ type: "is_na", optgroup: "", "nb_inputs": "0", "apply_to": ["number", "string", "datetime", "boolean"] });
 
         // Add additional operators for group comparison
         var myOperatorsGroups = ['equal_', 'not_equal_', 'less_', 'less_or_equal_', 'greater_', 'greater_or_equal_'];
